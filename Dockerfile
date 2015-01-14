@@ -50,7 +50,7 @@ RUN yum install --enablerepo=epel,mysql56-community,ius -y \
 # Apache
 #
 
-ADD http://ftp.yz.yamagata-u.ac.jp/pub/network/apache//httpd/httpd-2.2.29.tar.gz /usr/local/src/
+ADD http://ftp.yz.yamagata-u.ac.jp/pub/network/apache/httpd/httpd-2.2.29.tar.gz /usr/local/src/
 RUN cd /usr/local/src && \
   tar xzvf httpd-2.2.29.tar.gz && \
   cd httpd-2.2.29 && \
